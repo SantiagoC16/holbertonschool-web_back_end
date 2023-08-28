@@ -2,5 +2,6 @@
 """task 0"""
 
 
-def sum(a, b):
+def add(a: float, b: float) -> float:
+    """sum 2 floats"""
     return a + b
