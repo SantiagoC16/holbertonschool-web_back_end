@@ -36,7 +36,7 @@ class Server:
     def get_hyper(self, page: int = 1, page_size: int = 10) -> List[List]:
         """return a dict"""
         self.dataset()
-        total_pages = len(self.__dataset) / page_size
+        total_pages = len(self.__dataset)
         data = self.get_page(page, page_size)
         if page + 1 > total_pages:
             next_page = None
