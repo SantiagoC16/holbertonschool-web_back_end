@@ -45,11 +45,11 @@ class Server:
         _list = []
         for datas in self.__indexed_dataset:
             if datas >= index and datas <= (page_size + index):
-                _list.append(self.indexed_dataset[datas])
+                _list.append(self.__indexed_dataset[datas])
         _dict = {
-            'index': index,
-            'data': _list,
-            'page_size': page_size,
-            'next_index': index + page_size
+            "index": index,
+            "data": _list,
+            "page_size": page_size,
+            "next_index": index + page_size
         }
         return _dict
