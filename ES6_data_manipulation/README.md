@@ -1,1 +1,1 @@
-# ES6_promise
+# ES6_data_manipulation
